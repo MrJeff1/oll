@@ -13,5 +13,5 @@ SUB         ; subtracts last to numbers of stack and pushes them
 PRINT @     ; print string/number to console
 JUMP.EQ.0 % ; jumps to label if top of stack is 0
 JUMP.GT.0 % ; jumps to label if top of stack is greater than 0
-HALT #      ; return number as exit code
+HALT #      ; return number as exit code (stops program)
 ```
