@@ -70,7 +70,8 @@ def main():
 
         parts = line.split()
         op = parts[0]
-
+        op = op.upper()
+        
         if op.startswith(";") or op.startswith("#!"):  # comment or shebang
             continue  # directive, ignore for now
 

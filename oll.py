@@ -82,6 +82,7 @@ def run(program, labels) -> int:
 
     while pc < len(program):
         opcode, operand = program[pc]
+        opcode = opcode.upper() if opcode else None
         pc += 1
 
         if opcode and (opcode[0] == ";" or opcode[0] == "#!"): # comment or shebang
